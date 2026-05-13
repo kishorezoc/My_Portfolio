@@ -1,0 +1,130 @@
+/* सुरुको * र body को स्टाइल पूरै हटाइएको छ */
+
+.skills-wrap {
+  width: 100%;
+  padding: 3rem 2.5rem;
+  background: linear-gradient(135deg, #0f0c1a 0%, #1a1025 50%, #0d1520 100%);
+  border-radius: 20px;
+  font-family: 'DM Sans', sans-serif;
+  position: relative; /* absolute हटाइएको छ */
+  overflow: hidden;
+  border: 1px solid rgba(126, 192, 67, 0.1);
+  background-size: cover;
+  background-position: center;
+}
+
+.skills-wrap::before {
+  content: '';
+  position: absolute; /* relative को सट्टा absolute हुनुपर्छ */
+  top: -80px; 
+  right: -80px;
+  width: 280px; 
+  height: 280px;
+  background: radial-gradient(circle, rgba(99,153,34,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.skills-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; 
+  left: -60px;
+  width: 200px; 
+  height: 200px;
+  background: radial-gradient(circle, rgba(99,34,153,0.14) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.skills-title {
+  font-family: 'Caveat', cursive;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.skills-title span { 
+  color: #7ec043; 
+}
+
+.divider {
+  width: 48px;
+  height: 3px;
+  background: #7ec043;
+  border-radius: 2px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.7;
+}
+
+.skill-row { 
+  margin-bottom: 1.6rem; 
+}
+
+.skill-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.skill-pct {
+  font-family: 'Caveat', cursive;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #7ec043;
+  min-width: 48px;
+  text-align: right;
+}
+
+.bar-track {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50px;
+  height: 11px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 50px;
+  width: 0%;
+  transition: width 1.4s cubic-bezier(.22,.68,0,1.2);
+  position: relative;
+}
+
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; 
+  height: 16px;
+  border-radius: 50%;
+  background: inherit;
+  filter: brightness(1.5);
+}
+
+.green  { background: linear-gradient(90deg, #3a7d0a, #7ec043); }
+.teal   { background: linear-gradient(90deg, #0a6e6e, #2ecfcf); }
+.purple { background: linear-gradient(90deg, #5a1a9e, #a855f7); }
+.amber  { background: linear-gradient(90deg, #a05c00, #f59e0b); }
+.pink   { background: linear-gradient(90deg, #8b1a5a, #ec4899); }
+.blue   { background: linear-gradient(90deg, #0a3d8e, #3b82f6); }
+.coral  { background: linear-gradient(90deg, #8e2a0a, #f97316); }
+
+@media (max-width: 600px) {
+  .skills-wrap { padding: 2rem 1.25rem; }
+  .skills-title { font-size: 2rem; }
+  .skill-name { font-size: 0.75rem; }
+}

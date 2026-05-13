@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" href="/photos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/skill.css">
+
+
+    <title>Kishore Joshi</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="/photos/kishorelogo.png" alt="kishorelogo">
+                </a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul id="nav-menu">
+                        <li class="home"><a href="#home">Home</a></li>
+                        <li><a href="#aboutme" class="scroll-link">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#certification">Certification</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="btn2">
+                <a href="javascript:void(0);" onclick="openForm()">Contact <span>Me</span></a>
+            </div>
+            <!-- Updated button -->
+            <div class="toggle-switch">
+                <input type="checkbox" id="toggle-dark-mode">
+                <label for="toggle-dark-mode"><i class="fas fa-moon"></i></label>
+            </div>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section id="home">
+        <div class="container1">
+            <div class="img" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="photos/kishorpasupati (2).jpg" alt="Kishore Joshi">
+            </div>
+            <div class="text">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>kishore</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a
+                    <span></span>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Student At Pokhara University
+                </p>
+                <!-- social links -->
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://www.facebook.com/profile.php?id=61555193139224" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kishore_joshi12" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kishore-joshi-39927a25a/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Kishore_joc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/kishorezoc" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="/kishore_CV.pdf" target="_blank">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="aboutme">
+        <div class="container2">
+            <div class="img" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="photos/kishorpasupati.jpg" alt="Kishore Joshi">
+            </div>
+            <div class="abouttext">
+                <h1>About Me</h1>
+                <p>
+                    "I am Kishore Joshi. I have a +2 in IT and am a certified Frontend Developer, Digital Marketer, and
+                    Ethical Hacker. I love solving tech problems and keeping the digital world safe. I am always
+                    learning and looking for new ways to innovate in technology."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills">
+        <div class="skills-wrap" id="skillsWrap">
+            <div class="skills-title">My <span>Skills</span></div>
+            <div class="divider"></div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">Frontend Development</span>
+                    <span class="skill-pct" id="p0">0%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill green" data-pct="38"></div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-pct" id="p1">0%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill teal" data-pct="45"></div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">AI</span>
+                    <span class="skill-pct" id="p2">0%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill purple" data-pct="29"></div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">Ethical Hacking</span>
+                    <span class="skill-pct" id="p3">30%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill amber" data-pct="42"></div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">Digital Marketing</span>
+                    <span class="skill-pct" id="p4">0%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill pink" data-pct="33"></div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">Computer Knowledge</span>
+                    <span class="skill-pct" id="p5">0%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill blue" data-pct="47"></div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-meta">
+                    <span class="skill-name">IT</span>
+                    <span class="skill-pct" id="p6">0%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill coral" data-pct="22"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education  section -->
+    <section id="education">
+        <h1>Education</h1>
+        <div class="education-container">
+            <div class="education-entry">
+                <h3>Information Technology(+2)</h3>
+                <p>Shree Sunkuda Secondary School</p>
+            </div>
+            
+            <div class="education-entry">
+                <h3>Bachelor of Computer Application(BCA)</h3>
+                <p>Pokhara University</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="form-popup" id="myForm">
+        <form id="contactForm" class="form-container" onsubmit="event.preventDefault(); validateForm();">
+            <h1 style="color: black;">Get in Touch</h1>
+            <label for="name"><b>Full Name</b></label>
+            <input type="text" id="name" placeholder="Enter your full name" name="name" required autocomplete="name">
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" placeholder="Enter your email" name="email" required autocomplete="email">
+            <label for="subject"><b>Subject</b></label>
+            <input type="text" id="subject" placeholder="Enter the subject" name="subject" required
+                autocomplete="subject">
+            <label for="message"><b>Message</b></label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        <div id="successMessage" style="display: none; color: green; font-weight: bold;">Your message has been sent
+            successfully!</div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#home">
+                    <img src="/photos/kishorelogo.png" alt="Your Logo">
+                </a>
+                <p style="color: rgb(245, 240, 240); font-family: cursive; font-weight: bolder; font-size: medium;">
+                    Connect with me on social media to stay updated on my latest projects and endeavors. I look forward
+                    to
+                    connecting with you and sharing my journey. Let's create something amazing together! 😊🚀
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certification">Certification</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Me</h4>
+                <p>Email: <a href="mailto:joshikishor884@gmail.com" target="_blank">joshikishor884@gmail.com</a></p>
+                <p>Location: Kathmandu,Nepal</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <a href="https://www.facebook.com/profile.php?id=61555193139224" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kishore_joshi12" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kishore-joshi-39927a25a/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/Kishore_joc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/kishorezoc" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kishore joshi. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
